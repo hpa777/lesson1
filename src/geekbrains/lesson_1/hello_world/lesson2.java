@@ -88,18 +88,15 @@ public class lesson2 {
         if (array.length > 1) {
             int sumLeft = 0;
             for (int i = 0; i < array.length - 1; i++) {
-                if (i == 0) {
-                    sumLeft = array[i];
-                }
+                sumLeft += array[i];
                 int sumRight = 0;
                 for (int j = i + 1; j < array.length; j++) {
-                    sumRight = +array[j];
+                    sumRight+=array[j];
                 }
                 if (sumRight == sumLeft) {
                     result = true;
                     break;
                 }
-                sumLeft=+array[i];
             }
         }
         return result;
