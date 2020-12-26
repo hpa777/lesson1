@@ -35,6 +35,45 @@ public class Main {
         for (int i = 1900; i<=2020; i++) {
             isLeapYear(i);
         }
+
+
+        //Урок 2
+        //Проверка задания 1
+        lesson2.reversArrayItems();
+
+        //Урок 2
+        //Проверка задания 2
+        lesson2.fillArray();
+
+        //Урок 2
+        //Проверка задания 3
+        lesson2.timesArrayItems();
+
+        //Урок 2
+        //Проверка задания 4
+        lesson2.fillDiagonalArray();
+
+        //Урок 2
+        //Проверка задания 5
+        lesson2.findExtremum();
+
+        //Урок 2
+        //Проверка задания 6
+        int arr [] = new int[] {1, 1, 1, 2, 1};
+        System.out.println(
+                lesson2.checkBalance(arr)
+        );
+
+        //Урок 2
+        //Проверка задания 7
+        for (int j = -2; j <= 2; j++) {
+            int ar[] = lesson2.offsetArray(new int[] {3,5,6,1}, j);
+            for (int i = 0; i < ar.length; i++) {
+                System.out.print(ar[i]);
+            }
+            System.out.println(" - " + j);
+        }
+
     }
 
     /**
